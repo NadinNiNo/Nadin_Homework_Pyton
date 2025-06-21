@@ -2,7 +2,6 @@ import pytest
 from api_client import YougileAPIClient
 from unittest.mock import MagicMock
 
-
 class TestProjectsAPI:
     @pytest.fixture
     def mock_client(self):
