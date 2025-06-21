@@ -1,7 +1,7 @@
 class YougileAPIClient:
     def __init__(self, use_mock=False):
         self.use_mock = use_mock
-              
+      
     def create_project(self, title, description=None):
         if not title or not isinstance(title, str) or not title.strip():
             raise ValueError("Invalid title")
