@@ -9,4 +9,8 @@ catalog = [
 ]
 
 for phone in catalog:
+HEAD
     print(f"{phone.brand} - {phone.model}. {phone.number}")
+
+    print(f"{phone.brand} - {phone.model}. {phone.number}")
+764018d5ea3a7bf55226cb438fe317a0dae1dbe9
