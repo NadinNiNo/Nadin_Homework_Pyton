@@ -12,7 +12,7 @@ class ProductsPage(BasePage):
 
     @allure.step("Add item {item_name} to cart")
     def add_item_to_cart(self, item_name: str) -> None:
-        xpath = f"//div[text()='{item_name}']/ancestor::div[@class='inventory_item_description']//button"
+        xpath = f"//div[text()='{item_name}']/ancestor::div[@class = 'inventory_item_description']//button"
         self.click_element(("xpath", xpath))
 
     @allure.step("Go to cart")

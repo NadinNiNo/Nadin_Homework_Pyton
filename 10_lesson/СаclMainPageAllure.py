@@ -61,7 +61,7 @@ class CalcMainPage:
         :param expected_result: str — ожидаемый результат.
         :param delay: int — время задержки в секундах.
         """
-        # Добавляем +1 секунду к задержке для надежности
+
         WebDriverWait(self.driver, delay + 1).until(
             EC.text_to_be_present_in_element((
                 By.CLASS_NAME, "screen"), expected_result)

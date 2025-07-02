@@ -14,3 +14,4 @@ def browser():
 
     with allure.step("Close browser"):
         driver.quit()
+

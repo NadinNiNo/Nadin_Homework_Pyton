@@ -56,7 +56,7 @@ def test_calculator_flow(driver, num1, operation,
     with allure.step(f"Ожидание результата {expected_result}"):
         main_page.wait_for_result(expected_result, delay)
 
-    with allure.step("Проверка результата"):
+    with allure.step("Проверка полученного результата"):
         assert main_page.get_result() == expected_result, \
             (f"Ожидаемый результат: {expected_result}, "
              f"но получен: {main_page.get_result()}")

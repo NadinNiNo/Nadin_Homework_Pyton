@@ -22,3 +22,4 @@ class CheckoutPage(BasePage):
     @allure.step("Get total price")
     def get_total_price(self) -> str:
         return self.find_element(self.TOTAL_PRICE).text
+

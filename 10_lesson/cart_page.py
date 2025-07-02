@@ -13,3 +13,4 @@ class CartPage(BasePage):
     @allure.step("Click checkout")
     def click_checkout(self) -> None:
         self.click_element(self.CHECKOUT_BUTTON)
+

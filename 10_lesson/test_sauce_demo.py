@@ -12,7 +12,7 @@ import time
 def test_checkout_total_price():
     # Настройка опций Chrome
     options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")  # Открываем браузер в максимальном размере
+    options.add_argument("--start-maximized")
 
     # Инициализация драйвера
     driver = webdriver.Chrome(options=options)

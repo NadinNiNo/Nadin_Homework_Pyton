@@ -14,3 +14,4 @@ class BasePage:
 
     def click_element(self, locator: tuple) -> None:
         self.find_element(locator).click()
+ 
