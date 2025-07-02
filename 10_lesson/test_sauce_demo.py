@@ -15,7 +15,8 @@ def test_checkout_total_price():
     options.add_argument("--start-maximized")
 
     # Инициализация драйвера
-    driver = webdriver.Chrome(options=options)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
 
     try:
         # 1. Авторизация на сайте

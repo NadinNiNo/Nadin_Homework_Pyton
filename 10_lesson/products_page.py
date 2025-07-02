@@ -18,3 +18,4 @@ class ProductsPage(BasePage):
     @allure.step("Go to cart")
     def go_to_cart(self) -> None:
         self.click_element(self.CART_BUTTON)
+
