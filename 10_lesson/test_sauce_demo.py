@@ -98,3 +98,4 @@ def test_checkout_total_price():
     finally:
         # Закрываем браузер в любом случае
         driver.quit()
+
